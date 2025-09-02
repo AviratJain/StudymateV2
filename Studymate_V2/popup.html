@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StudyMate Setup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-mode">
+  <div class="popup-container">
+    <header>
+      <img src="icons/icon32.png" class="logo" />
+      <h1>StudyMate</h1>
+    </header>
+    <h2>Extension Settings</h2>
+    <form id="settings-form">
+      <label for="apiKey">AI Provider API Key:</label>
+      <input type="password" id="apiKey" placeholder="Enter your API key" required />
+      <label for="provider">Choose Model:</label>
+      <select id="provider">
+        <option value="openai">OpenAI</option>
+        <option value="gemini">Gemini</option>
+      </select>
+      <button class="gradient-btn" type="submit">Save</button>
+    </form>
+    <div id="save-message"></div>
+    <footer>
+      <small>StudyMate &copy; 2025 | <a href="https://github.com/AviratJain/StudyMate" target="_blank" style="color:#a7bfff;">GitHub</a></small>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
